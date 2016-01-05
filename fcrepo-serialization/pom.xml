@@ -6,7 +6,7 @@
   <parent>
     <artifactId>fcrepo-camel-toolbox</artifactId>
     <groupId>org.fcrepo.camel</groupId>
-    <version>4.4.1-SNAPSHOT</version>
+    <version>4.4.1-umd-0-SNAPSHOT</version>
   </parent>
 
   <artifactId>fcrepo-serialization</artifactId>
@@ -265,7 +265,7 @@
                 <artifactItem>
                   <groupId>org.fcrepo</groupId>
                   <artifactId>fcrepo-webapp</artifactId>
-                  <version>${project.version}</version>
+                  <version>4.4.1-SNAPSHOT</version>
                   <type>war</type>
                   <outputDirectory>${project.build.directory}</outputDirectory>
                   <destFileName>fcrepo.war</destFileName>
