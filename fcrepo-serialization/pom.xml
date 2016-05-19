@@ -6,7 +6,7 @@
   <parent>
     <artifactId>fcrepo-camel-toolbox</artifactId>
     <groupId>org.fcrepo.camel</groupId>
-    <version>4.4.1-umd-0-SNAPSHOT</version>
+    <version>4.5.1-umd-0-SNAPSHOT</version>
   </parent>
 
   <artifactId>fcrepo-serialization</artifactId>
@@ -108,6 +108,12 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.fcrepo.client</groupId>
+      <artifactId>fcrepo-java-client</artifactId>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -134,12 +140,6 @@
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-      </plugin>
-
-       <!-- to run the example using mvn camel:run -->
-      <plugin>
-        <groupId>org.apache.camel</groupId>
-        <artifactId>camel-maven-plugin</artifactId>
       </plugin>
 
       <!-- reserve network ports for integration testing -->
@@ -265,7 +265,7 @@
                 <artifactItem>
                   <groupId>org.fcrepo</groupId>
                   <artifactId>fcrepo-webapp</artifactId>
-                  <version>4.4.1-SNAPSHOT</version>
+                  <version>${fcrepo.version}</version>
                   <type>war</type>
                   <outputDirectory>${project.build.directory}</outputDirectory>
                   <destFileName>fcrepo.war</destFileName>

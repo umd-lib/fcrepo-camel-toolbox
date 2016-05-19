@@ -6,7 +6,7 @@
   <parent>
     <artifactId>fcrepo-camel-toolbox</artifactId>
     <groupId>org.fcrepo.camel</groupId>
-    <version>4.4.1-umd-0-SNAPSHOT</version>
+    <version>4.5.1-umd-0-SNAPSHOT</version>
   </parent>
 
   <artifactId>fcrepo-indexing-solr</artifactId>
@@ -151,7 +151,7 @@
     <dependency>
       <groupId>org.fcrepo.transform</groupId>
       <artifactId>fcrepo-transform</artifactId>
-      <version>${fcrepo-transform.version}</version>
+      <version>${fcrepo.version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -227,12 +227,6 @@
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-      </plugin>
-
-       <!-- to run the example using mvn camel:run -->
-      <plugin>
-        <groupId>org.apache.camel</groupId>
-        <artifactId>camel-maven-plugin</artifactId>
       </plugin>
 
       <!-- reserve network ports for integration testing -->

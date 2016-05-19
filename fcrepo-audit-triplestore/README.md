@@ -12,12 +12,6 @@ To build this project use
 
     mvn install
 
-##Running from the command line
-
-To run the project you can execute the following Maven goal
-
-    mvn camel:run
-
 ##Deploying in OSGi
 
 This project can be deployed in an OSGi container. For example using
@@ -25,7 +19,7 @@ This project can be deployed in an OSGi container. For example using
 [Apache Karaf](http://karaf.apache.org), you can run the following
 command from its shell:
 
-    feature:repo-add mvn:org.fcrepo.camel/fcrepo-camel-toolbox/LATEST/xml/features
+    feature:repo-add mvn:org.fcrepo.camel/toolbox-features/LATEST/xml/features
     feature:install fcrepo-audit-triplestore
 
 Or by copying the compiled bundle into `$KARAF_HOME/deploy`.
