@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.fcrepo.camel</groupId>
     <artifactId>fcrepo-camel-toolbox</artifactId>
-    <version>4.5.1</version>
+    <version>4.5.2</version>
   </parent>
 
   <artifactId>toolbox-features</artifactId>
@@ -32,7 +32,7 @@
     <commons.io.version>2.4</commons.io.version>
     <jersey.version>2.13</jersey.version>
     <resource-locator.version>1.0.1</resource-locator.version>
-    <modeshape.version>4.4.0.Final</modeshape.version>
+    <modeshape.version>4.5.0.Final</modeshape.version>
     <cassandra.driver.version>2.1.7.1</cassandra.driver.version>
     <mongo.driver.version>3.0.0</mongo.driver.version>
     <netty.version>4.0.29.Final</netty.version>
@@ -217,12 +217,12 @@
         <configuration>
           <forkCount>3</forkCount>
           <reuseForks>true</reuseForks>
-          <argLine>-Xmx1024m -XX:MaxPermSize=512m</argLine>
+          <argLine>-Xmx1024m</argLine>
           <systemPropertyVariables>
             <fcrepo.dynamic.reindexing.port>${fcrepo.dynamic.reindexing.port}</fcrepo.dynamic.reindexing.port>
             <fcrepo.dynamic.test.port>${fcrepo.dynamic.test.port}</fcrepo.dynamic.test.port>
             <fcrepo.dynamic.jms.port>${fcrepo.dynamic.jms.port}</fcrepo.dynamic.jms.port>
-            <project.build.outputDirectory>${project.build.outputDirectory}</project.build.outputDirectory>
+            <project.version>${project.version}</project.version>
             <karaf.ssh.port>${karaf.ssh.port}</karaf.ssh.port>
             <karaf.rmiRegistry.port>${karaf.rmiRegistry.port}</karaf.rmiRegistry.port>
             <karaf.rmiServer.port>${karaf.rmiServer.port}</karaf.rmiServer.port>
